@@ -1,0 +1,136 @@
+{% load static %}
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+
+  <title>Remove Video Play</title>
+  <meta name='description' content='Remove Video Play'>
+  <meta name='author' content='d3cr1pt0r'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+
+  <!--[if lt IE 9]>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js'></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script src='{% static 'js/bootstrap-treeview.js' %}'></script>
+
+  <div class='container'>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-md-12">
+
+        {% for key, values in folder_files.items %}
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading-folder">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ forloop.counter }}" aria-expanded="false" aria-controls="collapseOne">
+                  {{ key }}
+                </a>
+              </h4>
+            </div>
+            <div id="collapse-{{ forloop.counter }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-folder">
+              <div class="panel-body">
+                  <table class='table table-condensed'>
+                    <thead>
+                      <tr>
+                        <th>File</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {% for file in values %}
+                          <tr>
+                            <td scope=row>{{ file.file_name }}</td>
+                            <td><button type='button' class='btn btn-success play-file' file-path='{{ file.file_path }}'>Play</button></td>
+                          </tr>
+                        {% endfor %}
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class='well'>
+          <div class='row' style='width: 260px; float: none; margin: 0 auto;'>
+            <button type='button' class='btn btn-default send-shortcut' key='down-arrow'><span class='glyphicon glyphicon-fast-backward' aria-hidden='true'></span></button>
+            <button type='button' class='btn btn-default send-shortcut' key='left-arrow'><span class='glyphicon glyphicon-backward' aria-hidden='true'></span></button>
+            <button id='toggle-play-pause' type='button' class='btn btn-default send-shortcut' state='paused' key='p'><span class='glyphicon glyphicon-play' aria-hidden='true'></span></button>
+            <button id='stop' type='button' class='btn btn-default'><span class='glyphicon glyphicon-stop' aria-hidden='true'></span></button>
+            <button type='button' class='btn btn-default send-shortcut' key='right-arrow'><span class='glyphicon glyphicon-forward' aria-hidden='true'></span></button>
+            <button type='button' class='btn btn-default send-shortcut' key='up-arrow'><span class='glyphicon glyphicon-fast-forward' aria-hidden='true'></span></button>
+          </div>
+          <div class='row' style='width: 282px; float: none; margin: 0 auto; margin-top: 10px;'>
+            <button type='button' class='btn btn-default btn-xs send-shortcut' key='s'>Toggle subtitles</span></button>
+            <button type='button' class='btn btn-default btn-xs send-shortcut' key='w'>Show subtitles</span></button>
+            <button type='button' class='btn btn-default btn-xs send-shortcut' key='x'>Hide subtitles</span></button>
+          </div>
+          <div class='row' style='width: 342px; float: none; margin: 0 auto; margin-top: 10px;'>
+            <button type='button' class='btn btn-default btn-xs send-shortcut' key='.'>Speed 2x</span></button>
+            <button type='button' class='btn btn-default btn-xs send-shortcut' key='2'>Increase speed</span></button>
+            <button type='button' class='btn btn-default btn-xs send-shortcut' key='1'>Decrease speed</span></button>
+            <button type='button' style='padding: 3px 2px 2px 8px;' class='btn btn-default btn-sm send-shortcut' key='-'><span style='font-size: 20px;' class='glyphicon glyphicon-volume-down' aria-hidden='true'></span></button>
+            <button type='button' style='padding: 3px 2px 2px 8px;' class='btn btn-default btn-sm send-shortcut' key='+'><span style='font-size: 20px;' class='glyphicon glyphicon-volume-up' aria-hidden='true'></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script>
+  function setPlayButtonStatePlaying() {
+    $('#toggle-play-pause').find('span').removeClass('glyphicon-play');
+    $('#toggle-play-pause').find('span').addClass('glyphicon-pause');
+  }
+
+  function setPlayButtonStatePaused() {
+    $('#toggle-play-pause').find('span').removeClass('glyphicon-pause');
+    $('#toggle-play-pause').find('span').addClass('glyphicon-play');
+  }
+
+  function togglePlayButtonState() {
+    if ($('#toggle-play-pause').find('span').hasClass('glyphicon-play')) {
+      setPlayButtonStatePlaying();
+    } else {
+      setPlayButtonStatePaused();
+    }
+  }
+
+  $('.play-file').click(function() {
+    file_path = $(this).attr('file-path');
+    $.post('playFile/', {file_path: file_path}, function(data) {
+      setPlayButtonStatePlaying();
+      console.log(data);
+    });
+  });
+
+  $('#toggle-play-pause').click(function() {
+    togglePlayButtonState();
+  });
+
+  $('#stop').click(function() {
+    $.post('killPlayer/', {}, function(data) {
+      setPlayButtonStatePaused();
+      console.log(data);
+    });
+  });
+
+  $('.send-shortcut').click(function() {
+    var key = $(this).attr('key');
+    $.post('sendShortcut/', {key: key}, function(data) {
+      console.log(data);
+    });
+  });
+  </script>
+</body>
+</html>

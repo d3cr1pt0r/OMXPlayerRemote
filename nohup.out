@@ -1,0 +1,485 @@
+[15/Jan/2017 21:02:48] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 21:02:48] "GET /static/js/bootstrap-treeview.js HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 21:02:38
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+OMXPlayer running: False
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 21:03:05
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[15/Jan/2017 21:03:26] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 21:03:27] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 21:03:27] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 21:03:27] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 21:03:28] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 21:03:30] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 21:05:40] "POST /playFile/ HTTP/1.1" 200 136
+[15/Jan/2017 21:05:46] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 21:05:55] "POST /sendShortcut/ HTTP/1.1" 200 27
+[15/Jan/2017 21:05:58] "POST /sendShortcut/ HTTP/1.1" 200 27
+/usr/bin/omxplayer: line 67: 28651 Terminated              LD_LIBRARY_PATH="$OMXPLAYER_LIBS${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}" $OMXPLAYER_BIN "$@"
+[15/Jan/2017 21:06:02] "POST /playFile/ HTTP/1.1" 200 136
+[15/Jan/2017 21:06:05] "POST /sendShortcut/ HTTP/1.1" 200 39
+[15/Jan/2017 21:06:08] "POST /sendShortcut/ HTTP/1.1" 200 39
+[15/Jan/2017 21:06:11] "POST /sendShortcut/ HTTP/1.1" 200 38
+Video codec omx-h264 width 1280 height 718 profile 100 fps 23.976025
+Audio codec ac3 passthrough channels 6 samplerate 48000 bitspersample 16
+Subtitle count: 0, state: off, index: 1, delay: 0
+V:PortSettingsChanged: 1280x718@23.98 interlace:0 deinterlace:0 anaglyph:0 par:1.00 display:0 layer:0 alpha:255 aspectMode:0
+Seek to: 00:00:31
+Seek to: 00:01:06
+Seek to: 00:00:42
+have a nice day ;)
+[15/Jan/2017 22:27:07] "GET / HTTP/1.1" 200 10110
+[15/Jan/2017 22:27:07] "GET /static/js/bootstrap-treeview.js HTTP/1.1" 304 0
+[15/Jan/2017 22:28:14] "POST /playFile/ HTTP/1.1" 200 132
+[15/Jan/2017 23:08:56] "POST /sendShortcut/ HTTP/1.1" 200 24
+[15/Jan/2017 23:08:56] "POST /killPlayer/ HTTP/1.1" 200 21
+/usr/bin/omxplayer: line 67:   832 Terminated              LD_LIBRARY_PATH="$OMXPLAYER_LIBS${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}" $OMXPLAYER_BIN "$@"
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 21:03:25
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+OMXPlayer running: False
+OMXPlayer running: False
+OMXPlayer running: False
+OMXPlayer running: False
+OMXPlayer running: False
+OMXPlayer running: False
+OMXPlayer: sendCommand() -> echo -n "." > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> .
+OMXPlayer: sendCommand() -> echo -n "1" > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> 1
+OMXPlayer running: True
+OMXPlayer: sendCommand() -> echo -n "p" > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> p
+OMXPlayer: sendCommand() -> echo -n "p" > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> p
+OMXPlayer: sendCommand() -> echo -n "." > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> .
+OMXPlayer: sendCommand() -> echo -n "1" > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> 1
+OMXPlayer: sendCommand() -> echo -n "[C" > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> [C
+OMXPlayer: sendCommand() -> echo -n "[C" > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> [C
+OMXPlayer: sendCommand() -> echo -n "[D" > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> [D
+OMXPlayer running: False
+OMXPlayer: sendCommand() -> echo -n "." > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> .
+OMXPlayer: sendCommand() -> echo -n "1" > /home/pi/Documents/Python/Django/RemoteVideoPlay/omxplayerpipe &
+OMXPlayer: sendKey() -> 1
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:18:32
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:18:50
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:18:53
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:18:56
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:18:59
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:19:05
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:19:37
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:20:03
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x75ec0730>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/pi/Documents/Python/Django/RemoteVideoPlay/RemoteVideoPlay/urls.py", line 4, in <module>
+    from RemoteVideoPlay.views import RemoteVideoPlayView
+  File "/home/pi/Documents/Python/Django/RemoteVideoPlay/RemoteVideoPlay/views/RemoteVideoPlayView.py", line 26
+    return HttpResponse(json.dumps({'status': }))
+                                              ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x75f14730>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/pi/Documents/Python/Django/RemoteVideoPlay/RemoteVideoPlay/urls.py", line 4, in <module>
+    from RemoteVideoPlay.views import RemoteVideoPlayView
+  File "/home/pi/Documents/Python/Django/RemoteVideoPlay/RemoteVideoPlay/views/RemoteVideoPlayView.py", line 26
+    return JsonResponse(json.dumps({'status': }))
+                                              ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:21:53
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:21:59
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:22:03
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:22:14
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:22:18
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:22:59
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:23:02
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:23:11
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:23:29
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:23:40
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:23:45
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:24:16
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:24:24
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:24:31
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:24:49
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:24:56
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:25:05
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:25:49
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:26:02
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:26:15
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/Documents/Python/Django/RemoteVideoPlay/RemoteVideoPlay/views/RemoteVideoPlayView.py", line 14, in main
+    folder_files = FolderScanner.getFolderFiles2(settings.TORRENT_DIR)
+AttributeError: 'module' object has no attribute 'getFolderFiles2'
+[15/Jan/2017 23:28:45] "GET / HTTP/1.1" 500 66335
+Not Found: /favicon.ico
+[15/Jan/2017 23:28:46] "GET /favicon.ico HTTP/1.1" 404 2386
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 15, 2017 - 23:26:33
+Django version 1.10.5, using settings 'RemoteVideoPlay.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[15/Jan/2017 23:28:59] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:29:06] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:29:16] "POST /sendShortcut/ HTTP/1.1" 200 61
+[15/Jan/2017 23:29:16] "POST /killPlayer/ HTTP/1.1" 200 50
+[15/Jan/2017 23:29:17] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:29:25] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:49] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:50] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:50] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:51] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:51] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:51] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:51] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:51] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:51] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:52] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:52] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:52] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:52] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:52] "GET / HTTP/1.1" 200 5393
+[15/Jan/2017 23:30:52] "GET / HTTP/1.1" 200 5393
