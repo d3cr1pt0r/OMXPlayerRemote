@@ -4,18 +4,20 @@ from django.http import HttpResponse, JsonResponse
 from django.template import loader, RequestContext
 from django.views.decorators.csrf import csrf_exempt
 
-from RemoteVideoPlay.helpers import FolderScanner
-from RemoteVideoPlay.helpers import OMXPlayer
+from ControlPanel.helpers import FolderScanner
+from ControlPanel.helpers import OMXPlayer
+from ControlPanel.helpers import DatabaseSync
 from RemoteVideoPlay import settings
 
 def main(request):
     OMXPlayer.checkForPipe(settings.PIPE_PATH)
 
-    folder_files = FolderScanner.getFolderFiles(settings.TORRENT_DIR)
+    DatabaseSync.scanFolder(settings.TORRENT_DIR, settings.SUPPORTED_EXT)
+    directories = DatabaseSync.getFiles()
 
     template = loader.get_template('main.html')
     context = RequestContext(request, {
-        'folder_files': folder_files,
+        'directories': directories,
     })
 
     return HttpResponse(template.render(context))
@@ -26,9 +28,12 @@ def playFile(request):
         return JsonResponse({'success': False, 'message': '"file_path" missing in POST data'})
 
     file_path = request.POST.get('file_path', '')
+    full_path = settings.TORRENT_DIR + file_path
 
-    if not OMXPlayer.playFile(file_path, settings.OMX_PATH, settings.PIPE_PATH):
+    if not OMXPlayer.playFile(full_path, settings.OMX_PATH, settings.PIPE_PATH):
         return JsonResponse({'success': False, 'message': 'OMXPlayer failed to play file: ' + file_path})
+
+    DatabaseSync.setFileWatched(file_path, watched=True)
 
     return JsonResponse({'success': True, 'message': 'Request sent to OS'})
 

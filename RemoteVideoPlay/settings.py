@@ -39,7 +39,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.1.91']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ControlPanel',
 ]
 
 MIDDLEWARE = [

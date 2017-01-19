@@ -41,7 +41,7 @@ def sendKey(key, pipe_path):
     if key not in keys:
         return False
 
-    return sendCommand('echo -n "' + key + '"', pipe_path)
+    return sendCommand('echo -n "' + keys[key] + '"', pipe_path)
 
 def killPlayer():
     if isPlayerRunning():
@@ -50,6 +50,9 @@ def killPlayer():
 def playFile(path, omx_path, pipe_path):
     if isPlayerRunning():
         killPlayer()
+
+    if not os.path.exists(path):
+        return False
 
     s1 = os.system(omx_path + ' -p -o hdmi "' + path + '" <' + pipe_path + ' &') == 0
     s2 = sendKey('z', pipe_path)

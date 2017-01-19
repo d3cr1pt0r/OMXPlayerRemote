@@ -24,12 +24,12 @@
     <div class="row" style="margin-top: 20px;">
       <div class="col-md-12">
 
-        {% for key, values in folder_files.items %}
+        {% for directory in directories %}
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="heading-folder">
               <h4 class="panel-title">
                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ forloop.counter }}" aria-expanded="false" aria-controls="collapseOne">
-                  {{ key }}
+                  {{ directory.name }}
                 </a>
               </h4>
             </div>
@@ -39,14 +39,25 @@
                     <thead>
                       <tr>
                         <th>File</th>
+                        <th>Status</th>
                         <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
-                        {% for file in values %}
+                        {% for file in directory.file_set.all %}
                           <tr>
-                            <td scope=row>{{ file.file_name }}</td>
-                            <td><button type='button' class='btn btn-success play-file' file-path='{{ file.file_path }}'>Play</button></td>
+                            <td style='line-height: 32px;' scope=row>{{ file.name }}</td>
+                            <td>
+                              {% if file.watched %}
+                                <span style='line-height: 32px;' class="label label-success">Watched</span>
+                              {% else %}
+                                <span style='line-height: 32px;' class="label label-default">Never Watched</span>
+                              {% endif %}
+                              {% if file.lastWatched %}
+                                <span style='line-height: 32px;' class="label label-primary">Watched Last</span>
+                              {% endif %}
+                            </td>
+                            <td style='text-align: right;'><button type='button' class='btn btn-success play-file' file-path='{{ file.path }}'>Play</button></td>
                           </tr>
                         {% endfor %}
                     </tbody>
