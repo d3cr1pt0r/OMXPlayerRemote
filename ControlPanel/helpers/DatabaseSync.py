@@ -13,7 +13,6 @@ def scanFolder(path, supported_extensions):
 
             if file_ext in supported_extensions:
                 syncFile(file_first_folder, file_name, file_path_relative)
-                #f[file_first_folder].append({ 'file_path': file_path, 'file_name': file_name })
 
 def syncFile(directory_name, file_name, file_path):
     directory_model, directory_created = Directory.objects.get_or_create(name=directory_name)
