@@ -1,10 +1,9 @@
-import json
+import json, os
 
 from django.http import HttpResponse, JsonResponse
 from django.template import loader, RequestContext
 from django.views.decorators.csrf import csrf_exempt
 
-from ControlPanel.helpers import FolderScanner
 from ControlPanel.helpers import OMXPlayer
 from ControlPanel.helpers import DatabaseSync
 from RemoteVideoPlay import settings
@@ -19,6 +18,8 @@ def main(request):
     context = RequestContext(request, {
         'directories': directories,
     })
+
+    print os.system('echo'+'"$USER"')
 
     return HttpResponse(template.render(context))
 

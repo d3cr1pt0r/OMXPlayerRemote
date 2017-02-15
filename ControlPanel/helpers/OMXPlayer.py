@@ -54,7 +54,7 @@ def playFile(path, omx_path, pipe_path):
     if not os.path.exists(path):
         return False
 
-    s1 = os.system(omx_path + ' -p -o hdmi "' + path + '" <' + pipe_path + ' &') == 0
+    s1 = os.system('sudo ' + omx_path + ' -p -o hdmi "' + path + '" <' + pipe_path + ' &') == 0
     s2 = sendKey('z', pipe_path)
 
     return s1 and s2
